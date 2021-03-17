@@ -13,6 +13,10 @@ class Students{
             this->arr.push_back(student);
         }
         void show(){
+            if(arr.empty()){
+                cout<<"This list is empty"<<endl;
+                return;
+            }
             for (auto it = this->arr.begin(); it != this->arr.end(); it++)
                 cout<<*it<<endl;
         }
@@ -24,7 +28,7 @@ class Students{
                         return;
                     }
                 }
-            cout<< "None";
+            cout<< "There are no student with this name "<<endl;
 
         }
 };
